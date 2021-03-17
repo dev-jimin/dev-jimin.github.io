@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>카테고리: etc - Roy&#039;s _log</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Roy&#039;s _log"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Roy&#039;s _log"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Roy&#039;s _log"><meta property="og:url" content="https://jie88min.gitlab.io/"><meta property="og:site_name" content="Roy&#039;s _log"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://jie88min.gitlab.io/img/og_image.png"><meta property="article:author" content="Roy"><meta property="article:tag" content="iOS Dev."><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jie88min.gitlab.io"},"headline":"Roy's _log","image":["https://jie88min.gitlab.io/img/og_image.png"],"author":{"@type":"Person","name":"Roy"},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/github.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-HM0KCMJ2ZV" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-HM0KCMJ2ZV');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.2.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Roy&#039;s _log" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">카테고리</a></li><li class="is-active"><a href="#" aria-current="page">etc</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-03-17T02:59:37.181Z" title="2021-03-17T02:59:37.181Z">2021-03-17</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-03-17T05:03:44.370Z" title="2021-03-17T05:03:44.370Z">2021-03-17</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/etc/">etc</a></span><span class="level-item">4분안에 읽기 (약 585 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/03/17/get-start-with-hexo/">Hexo를 이용한 깃블로그 만들기</a></h1><div class="content"><p>나만의 기술 블로그를 만들기 위해 여러 블로그 프레임워크를 찾던 중 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>프레임워크가 가장 눈에 띄었다.</p>
+<p>오늘은 Hexo를 이용한 GitHub blog 만들기에 대하여 포스팅 하고자 한다.</p>
+<br>
+
+<h4 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>hexo 프레임 워크를 전역 설치한 후 원하는 디렉토리로 이동하여 블로그 모듈을 설치 해준다.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &#x27;폴더명&#x27;</span><br><span class="line">$ cd &#x27;폴더명&#x27;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<p>모듈 설치 후 <code>hexo server</code>명령어를 통해 로컬 서버를 바로 구동시킬 수 있다.</p>
+<p><code>http://localhost:4000</code>로 접속 해보자.</p>
+<br>
+
+<br>
+
+<h4 id="테마-적용"><a href="#테마-적용" class="headerlink" title="테마 적용"></a>테마 적용</h4><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexi.io/themes</a>에서 원하는 테마를 다운로드 하고 압축을 풀어 hexo 폴더 내 <code>themes</code>안에 넣어준다.</p>
+<p>자세한 설정은 해당 테마 설치 document에 명시되어 있으며, 설정이 완료되면 <code>hexo server</code>명령어로 서버를 재 구동 시켜준다.</p>
+<br>
+
+<p>패키지 에러가 발생한다면 해당 테마에서 필요로 하는 패키지를 모두 설치해주면 된다.</p>
+<br>
+
+<br>
+
+<h4 id="첫-포스팅-하기"><a href="#첫-포스팅-하기" class="headerlink" title="첫 포스팅 하기"></a>첫 포스팅 하기</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post &#x27;파일명&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>새로운 포스팅을 하기 위해 .md 파일을 생성해 준다.</p>
+<p>마크다운 문법은 <a target="_blank" rel="noopener" href="https://heropy.blog/2017/09/30/markdown/">MarkDown 사용법 총정리</a> 페이지를 참고!</p>
+<br>
+
+<br>
+
+<h4 id="깃허브-저장소-생성"><a href="#깃허브-저장소-생성" class="headerlink" title="깃허브 저장소 생성"></a>깃허브 저장소 생성</h4><p>헥소 블로그는 두개의 저장소를 사용하게 되는데, </p>
+<p>하나는 사용자가 보게될 배포 페이지용 다른 하나는 실제 소스를 저장할 저장소 이다.</p>
+<p>쉽게 말해 <code>프론트/백엔드</code>로 구분된다.</p>
+<br>
+
+<p>깃허브로 이동하여 저장소 이름을 <code>사용자계정.github.io</code> 로 생성 해준다.</p>
+<p>생성 할 때 <code>README.md</code>파일도 같이 생성 해준다.</p>
+<br>
+
+<p>저장소를 생성하고 <code>https://사용자계정.github.io</code>로 접속하면 페이지가 정상적으로 출력되는것을 확인할 수 있다.</p>
+<br>
+
+<br>
+
+<h4 id="Hexo-Git-연동"><a href="#Hexo-Git-연동" class="headerlink" title="Hexo-Git 연동"></a>Hexo-Git 연동</h4><p>hexo폴더 내 <code>_config.yml</code>파일을 수정해준다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;사용자계정&#x2F;사용자계정.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>깃허브 페이지로 배포하기 위해 배포 플러그인을 설치해 준다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<br>
+
+<h4 id="배포하기"><a href="#배포하기" class="headerlink" title="배포하기"></a>배포하기</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>또는</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure>
+
+</div></article></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3"><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/algorithm/"><span class="level-start"><span class="level-item">algorithm</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/android/"><span class="level-start"><span class="level-item">android</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/etc/"><span class="level-start"><span class="level-item">etc</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/swift/"><span class="level-start"><span class="level-item">swift</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-17T02:59:37.181Z">2021-03-17</time></p><p class="title"><a href="/2021/03/17/get-start-with-hexo/">Hexo를 이용한 깃블로그 만들기</a></p><p class="categories"><a href="/categories/etc/">etc</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-01-15T07:06:29.000Z">2021-01-15</time></p><p class="title"><a href="/2021/01/15/android-q-media-store/">Android Q Media Store 사용</a></p><p class="categories"><a href="/categories/android/">android</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-12-18T05:06:14.000Z">2020-12-18</time></p><p class="title"><a href="/2020/12/18/20201218-swift-uibarbuttonitem/">[Swift] UIBarButtonItem을 이용한 ToolBar 구현</a></p><p class="categories"><a href="/categories/swift/">swift</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-11-23T01:54:02.000Z">2020-11-23</time></p><p class="title"><a href="/2020/11/23/2020-11-23/">실패율</a></p><p class="categories"><a href="/categories/algorithm/">algorithm</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-11-16T02:37:25.000Z">2020-11-16</time></p><p class="title"><a href="/2020/11/16/2020-11-16/">정렬 (Sort)</a></p><p class="categories"><a href="/categories/algorithm/">algorithm</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">3월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">1월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/12/"><span class="level-start"><span class="level-item">12월 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">11월 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/algorithm/"><span class="tag">algorithm</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/android/"><span class="tag">android</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/iOS/"><span class="tag">iOS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/java/"><span class="tag">java</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/swift/"><span class="tag">swift</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Roy&#039;s _log" height="28"></a><p class="is-size-7"><span>&copy; 2021 Roy</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
